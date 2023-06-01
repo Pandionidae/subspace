@@ -173,6 +173,7 @@ line | center
 echo -e "Встановлення Subspace gemini-3d" | center
 line | center
 install_tools
+line | center
 install_docker
 line | center
 data_var
