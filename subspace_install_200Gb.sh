@@ -156,8 +156,8 @@ function docker_compose_up {
 
 
 function delete {
-  docker-compose -f $HOME/subspace_docker/docker-compose.yml down -v &>/dev/null
-  docker volume rm subspace_docker_subspace-farmer subspace_docker_subspace-node &>/dev/null
+  docker-compose -f $HOME/subspace_docker/docker-compose.yml down -v 
+  docker volume rm subspace_docker_subspace-farmer subspace_docker_subspace-node 
 }
 
 
