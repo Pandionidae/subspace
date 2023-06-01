@@ -174,9 +174,9 @@ echo -e "Встановлення Subspace gemini-3d" | center
 line | center
 install_tools
 install_docker
+line | center
 data_var
 delete
-line | center
 docker_compose
 line | center
 echo -e "Старт Node i Farmer Subspace" | center
