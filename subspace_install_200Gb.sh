@@ -71,7 +71,7 @@ function install_docker {
 
 function r_nodename {
   if [ ! $SUBSPACE_NODENAME ]; then
-  echo -e "Введіть ім'я ноди(без спец символів)"
+  echo -e "Введіть ім'я ноди(без спец символів)" | center
   line
   read SUBSPACE_NODENAME
   fi
@@ -79,7 +79,7 @@ function r_nodename {
 
 function r_wallet {
   if [ ! $WALLET_ADDRESS ]; then
-  echo -e "Введіть ваш polkadot.js address"
+  echo -e "Введіть ваш polkadot.js address" | center
   line
   read WALLET_ADDRESS
   fi
