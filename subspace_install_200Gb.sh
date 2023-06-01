@@ -1,6 +1,3 @@
-SUBSPACE_NODENAME=$(dialog --inputbox "Введіть ім'я ноди(без спец символів):" 0 0 "Random name" --stdout)
-WALLET_ADDRESS=$(dialog --inputbox "Введіть ваш polkadot.js address:" 0 0 "Починається на st9..." --stdout)
-
 #function
 
 center()
