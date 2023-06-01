@@ -176,7 +176,9 @@ install_tools
 install_docker
 line | center
 data_var
+line | center
 delete
+line | center
 docker_compose
 line | center
 echo -e "Старт Node i Farmer Subspace" | center
