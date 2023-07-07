@@ -26,15 +26,15 @@ function line {
 
 function get_vars {
   export CHAIN="gemini-3e"
-  echo $CHAIN
+  echo $CHAIN | center
   export RELEASE="gemini-3e-2023-jul-03"
-  echo $RELEASE
+  echo $RELEASE | center
   export SUBSPACE_NODENAME=$(cat $HOME/subspace_docker/docker-compose.yml | grep "\-\-name" | awk -F\" '{print $4}')
-  echo $SUBSPACE_NODENAME
+  echo $SUBSPACE_NODENAME | center
   export WALLET_ADDRESS=$(cat $HOME/subspace_docker/docker-compose.yml | grep "\-\-reward-address" | awk -F\" '{print $4}')
-  echo $WALLET_ADDRESS
+  echo $WALLET_ADDRESS | center
   export PLOT_SIZE=$(cat $HOME/subspace_docker/docker-compose.yml | grep "\-\-plot-size" | awk -F\" '{print $4}')
-  echo $PLOT_SIZE
+  echo $PLOT_SIZE | center
 }
 
 function delete_old {
@@ -121,5 +121,7 @@ delete_old
 line | center
 update_subspace
 line | center
-echo -e "${GREEN}---Оновлення завершене---${NORMAL}" | center
+echo -e "---Оновлення завершене---" | center
+line | center
+
 cd $HOME
