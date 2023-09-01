@@ -12,7 +12,6 @@ function wget_pulsar {
 function read_nodename {
   if [ ! $SUBSPACE_NODENAME ]; then
   echo -e "Введіть назву ноди"
-  line
   read SUBSPACE_NODENAME
   export SUBSPACE_NODENAME
   sleep 1
@@ -22,7 +21,6 @@ function read_nodename {
 function read_wallet {
   if [ ! $WALLET_ADDRESS ]; then
   echo -e "Введіть polkadot.js address"
-  line
   read WALLET_ADDRESS
   export WALLET_ADDRESS
   sleep 1
