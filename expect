@@ -35,7 +35,7 @@ expect "*path for storing node files*"
 send "\r"
 
 expect "*farm size*"
-send "400.0 GB\r"
+send "800.0 GB\r"
 
 expect "*Specify the chain to farm*"
 send "Gemini3f\r"
