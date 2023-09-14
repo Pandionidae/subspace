@@ -2,6 +2,7 @@
 
 sudo systemctl stop subspace
 
+
 LEVEL=$(awk '
 BEGIN {
     while (!/flags/) if (getline < "/proc/cpuinfo" != 1) exit 1
@@ -12,10 +13,10 @@ BEGIN {
     print level; 
 }')
 
-if (( LEVEL >= 4 )); then
-    URL="https://github.com/subspace/pulsar/releases/download/v0.6.6-alpha/pulsar-ubuntu-x86_64-skylake-v0.6.6-alpha"
+if (( LEVEL >= 3 )); then
+    URL="https://github.com/subspace/pulsar/releases/download/v0.6.7-alpha/pulsar-ubuntu-x86_64-skylake-v0.6.7-alpha"
 else
-    URL="https://github.com/subspace/pulsar/releases/download/v0.6.6-alpha/pulsar-ubuntu-x86_64-v2-v0.6.6-alpha"
+    URL="https://github.com/subspace/pulsar/releases/download/v0.6.7-alpha/pulsar-ubuntu-x86_64-v2-v0.6.7-alpha"
 fi
 
 rm -f /usr/local/bin/pulsar
